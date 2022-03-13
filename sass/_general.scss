@@ -1,0 +1,41 @@
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #55a630;
+}
+
+
+/* Works on Chrome, Edge, and Safari */
+
+*::-webkit-scrollbar {
+    width: 22px;
+    height: 5px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #f0f0f0;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #55a630;
+    border-radius: 20px;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    scrollbar-width: thin;
+    scrollbar-color: blue orange;
+    font-family: "Montserrat", 'Arial', sans-serif;
+}
+
+img {
+    height: auto;
+}

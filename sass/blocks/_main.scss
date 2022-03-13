@@ -1,0 +1,124 @@
+.main {
+    &__heading {
+        text-align: center;
+        color: #55a630;
+        text-align: center;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 35px;
+        margin-bottom: 75px;
+    }
+    .box__sections {
+        display: flex;
+        color: #424242;
+        margin-bottom: 75px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    // order
+    .order__img {
+        order: 2;
+        transform: translateX(126px);
+    }
+    // end order
+    .box__images {
+        margin-right: 122px;
+    }
+    .content__heading {
+        font-style: normal;
+        font-weight: 600px;
+        font-size: 32px;
+        line-height: 26px;
+        margin-bottom: 29px;
+    }
+    .content__line {
+        width: 133px;
+        height: 2px;
+        background-color: #55a630;
+        margin-bottom: 45px;
+    }
+    .content__text {
+        max-width: 590px;
+        font-weight: 500px;
+        font-size: 25px;
+        line-height: 33px;
+    }
+}
+
+@media only screen and (max-width:1000px) {
+    .main {
+        padding-bottom: 100px;
+        &__heading {
+            font-weight: 600;
+            font-size: 30px;
+            margin-bottom: 50px;
+        }
+        &__box {
+            max-width: 962px;
+        }
+        .box__sections {
+            margin: 0 auto;
+            max-height: 265px;
+            margin-bottom: 56px
+        }
+        .box__images {
+            max-width: 389px;
+            max-height: 265px;
+        }
+        .content__heading {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .content__line {
+            margin-bottom: 42px;
+        }
+        .content__text {
+            font-size: 18px;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .main {
+        &__heading {
+            font-size: 25px;
+        }
+        .box__sections {
+            padding-left: 45px;
+            padding-right: 45px;
+        }
+        .box__images {
+            max-width: 256px;
+            height: 226px;
+        }
+        .content__heading {
+            font-size: 18px;
+            white-space: nowrap;
+        }
+        .content__text {
+            max-width: 332px;
+            max-height: 165px;
+            font-size: 15px;
+            line-height: 21px;
+            overflow: hidden;
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .main {
+        max-width: 360px;
+        padding-bottom: 275px;
+        &__heading {
+            font-size: 20px;
+        }
+        &__box {
+            max-width: 360px;
+        }
+        .box__sections {
+            display: block;
+            padding-bottom: 180px;
+        }
+    }
+}

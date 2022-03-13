@@ -1,0 +1,200 @@
+.review {
+    padding-top: 177px;
+    margin-bottom: 175px;
+    margin: 0 auto;
+    &__heading {
+        font-weight: 600;
+        font-size: 35px;
+        line-height: 28px;
+        text-align: center;
+        padding-bottom: 75px;
+    }
+    &__container {
+        background-color: #ecf9eb;
+        max-height: 968px;
+        padding-top: 70px;
+        padding-left: 104px;
+        padding-right: 25px;
+        overflow-y: scroll;
+    }
+    &__block {
+        display: flex;
+        padding-bottom: 80px;
+        justify-content: space-between;
+        &--last {
+            margin-bottom: 128px;
+        }
+    }
+    .review__right {
+        max-width: 746px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .review__left-name {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        color: #424242;
+    }
+    .review__left-date {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 26px;
+        /* identical to box height, or 144% */
+        color: #424242;
+        opacity: 0.8;
+    }
+    .review__btn {
+        padding: 21px 65px;
+        background-color: #55a630;
+        border: none;
+        position: absolute;
+        transform: translateX(125%) translateY(-152px);
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 26px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+}
+
+@media only screen and (max-width:1000px) {
+    .review {
+        &__container {
+            max-width: 958px;
+        }
+        .review__right {
+            max-width: 591px;
+            &--short {
+                max-height: 112px;
+                overflow: hidden;
+            }
+        }
+        .review__btn {
+            padding: 19px 47px;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .review {
+        max-width: 642px;
+        max-height: 1148px;
+        &__heading {
+            font-size: 25px;
+            line-height: 17px;
+        }
+        &__container {
+            padding-top: 48px;
+            padding-left: 60px;
+            padding-right: 15px;
+            padding-bottom: 165px;
+        }
+        .review__block {
+            flex-direction: column;
+            padding-bottom: 10px;
+            &--forth {
+                margin-bottom: 165px;
+            }
+            .review__left {
+                order: 1;
+                text-align: right;
+            }
+            .review__left-name {
+                font-size: 15px;
+                line-height: 26px;
+            }
+            .review__left-date {
+                font-size: 15px;
+                line-height: 26px;
+            }
+            &--last {
+                margin-bottom: 0;
+                padding-bottom: 0;
+            }
+        }
+        .review__right {
+            max-width: 550px;
+            font-size: 15px;
+            line-height: 23px;
+            &--short2 {
+                max-height: 134px;
+            }
+            &--short3 {
+                max-height: 65px;
+                overflow: hidden;
+            }
+            &--short4 {
+                max-height: 65px;
+                overflow: hidden;
+            }
+        }
+        .review__btn {
+            transform: translateX(100px) translateY(130px);
+        }
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .review {
+        &__heading {
+            font-size: 20px;
+            line-height: 15px;
+            padding-bottom: 40px;
+        }
+        &__container {
+            max-width: 360px;
+            max-height: 1048px;
+        }
+        .review__block {
+            padding-bottom: 50px;
+        }
+        .review__right {
+            max-width: 320px;
+            &--short1 {
+                max-height: 250px;
+                overflow: hidden;
+            }
+            &--short2 {
+                max-height: 227px;
+                overflow: hidden;
+            }
+            &--short3 {
+                max-height: 112px;
+                overflow: hidden;
+                margin-bottom: 208px;
+            }
+        }
+        .review__btn {
+            transform: translateX(-10px) translateY(-350px);
+        }
+    }
+}
+
+@media only screen and (max-width:320px) {
+    .review {
+        &__container {
+            max-height: 1048px;
+        }
+        .review__block {
+            margin-bottom: 56px;
+            &--short1 {
+                max-height: 299px;
+                overflow: hidden;
+            }
+            &--short2 {
+                overflow: hidden;
+                margin-bottom: 155px;
+            }
+        }
+        .review__right {
+            max-width: 254px;
+        }
+        .review__btn {
+            padding: 15px 37px;
+            transform: translateY(-650px);
+        }
+    }
+}
